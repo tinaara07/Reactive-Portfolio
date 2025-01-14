@@ -1,39 +1,40 @@
 import React from 'react';
+import * as images from "../assets/images";
 
 const projects = [
   {
     name: 'Tech Journal',
-    image: 'project1.jpg', 
+    image: 'project1', 
     link: 'https://tech-journal-ahbv.onrender.com/',
     github: 'https://github.com/tinaara07/Tech-Journal'
   },
   {
     name: 'PWA text editor',
-    image: 'project2.jpg', 
+    image: 'project2', 
     link: 'https://pwa-text-editor-3-0kr3.onrender.com/',
     github: 'https://github.com/tinaara07/PWA_text_editor'
   },
   {
     name: 'Note Taker',
-    image: 'project3.jpg', 
+    image: 'project3', 
     link: 'https://note-taker-jc7f.onrender.com/',
     github: 'https://github.com/tinaara07/Note-Taker'
   },
   {
     name: 'Duty Dashboard',
-    image: 'project4.jpg', 
+    image: 'project4', 
     link: 'https://tinaara07.github.io/Duty-Dashboard/',
     github: 'https://github.com/tinaara07/Duty-Dashboard'
   },
   {
     name: 'Climate Monitor',
-    image: 'project5.jpg', 
+    image: 'project5', 
     link: 'https://tinaara07.github.io/Climate-Monitor/',
     github: 'https://github.com/tinaara07/Climate-Monitor'
   },
   {
     name: 'Payroll Tracker',
-    image: 'project6.jpg', 
+    image: 'project6', 
     link: 'https://tinaara07.github.io/Payroll-Tracker/',
     github: 'https://github.com/tinaara07/Payroll-Tracker'
   }
@@ -45,7 +46,7 @@ const Portfolio = () => (
     <div className="projects">
       {projects.map((project, index) => (
         <div key={index} className="project">
-          <img src={project.image} alt={project.name} />
+          <img src={images[project.image]} alt={project.name} />
           <h3>{project.name}</h3>
           <a href={project.link} target="_blank" rel="noopener noreferrer">
             View Project
